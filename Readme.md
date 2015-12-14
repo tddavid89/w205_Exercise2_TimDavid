@@ -3,6 +3,24 @@ The following is a description of the steps that I took to complete this exercis
 
 An alternative is to run the following shell script after you have selected your AMI
 - GitHub: [**w205_Exercise2_TimDavid/automation.sh**] [automation script]
+  - If you do run this shell script, please follow the following directions:
+
+    ```sh
+      $ cd /data
+      $ wget https://raw.githubusercontent.com/tddavid89/w205_Exercise2_TimDavid/master/automation.sh](https://raw.githubusercontent.com/tddavid89/w205_Exercise2_TimDavid/master/automation.sh)
+      $ chmod 777 /data/automation.sh
+      $ /data/automation.sh
+    ```
+
+  - Please note that as you are running this script as **_root_**, you will get an error from _lein_ and you will have to press ENTER to continue:
+
+    ```
+    WARNING: You're currently running as root; probably by accident.
+    Press control-C to abort or Enter to continue as root.
+    Set LEIN_ROOT to disable this warning.
+    ```
+
+If you choose to run the code manually, here are the appropriate steps for setup:
 
 ## INITIAL SETUP
 ### AMI
@@ -33,6 +51,7 @@ $ wget --directory-prefix=/usr/bin https://raw.githubusercontent.com/technomancy
 $ chmod a+x /usr/bin/lein
 ```
 
+##### _The remainder of this document is applicable to all AMI's_ :
 ### Install Packages
 In case they are not included, the following packages need to be installed:
 
@@ -92,7 +111,7 @@ Clone my github and copy bolts/spouts to main project:
 $ cd /data/ex2
 $ git clone https://github.com/tddavid89/w205_Exercise2_TimDavid
 $ cp /data/ex2/w205_Exercise2_TimDavid/scripts/wordcount.py /data/ex2/exercise_2/EX2tweetwordcount/src/bolts/wordcount.py
-$ cp /data/ex2/w205_Exercise2_TimDavid/scripts/wordcount.py /data/ex2/exercise_2/EX2tweetwordcount/src/spouts/tweets.py
+$ cp /data/ex2/w205_Exercise2_TimDavid/scripts/tweets.py /data/ex2/exercise_2/EX2tweetwordcount/src/spouts/tweets.py
 ```
 
 ### File Structure
@@ -154,11 +173,14 @@ FILE STRUCTURE:
    |---twitterApplicationCodes
         |---finalresults.py
         |---histogram.py
+   |---architecture.html
    |---architecture.md
    |---architecture.pdf
    |---automation.sh
    |---Plot.png
+   |---Readme.html
    |---Readme.md
+   |---Readme.pdf
    |---Readme.txt
 ```
 

@@ -44,8 +44,6 @@ cp /data/ex2/exercise_2/tweetwordcount/src/bolts/wordcount.py /data/ex2/exercise
 cp /data/ex2/exercise_2/tweetwordcount/topologies/tweetwordcount.clj /data/ex2/exercise_2/EX2tweetwordcount/topologies/tweetwordcount.clj
 
 # Remove files left from original topology from streamparse folder
-#rm /data/ex2/EX2tweetwordcount/src/bolts/wordcount.py
-#rm /data/ex2/EX2tweetwordcount/src/spouts/words.py
 rm /data/ex2/exercise_2/EX2tweetwordcount/topologies/wordcount.clj
 
 # Clone my github and copy bolts/spouts to main project
@@ -55,17 +53,11 @@ cp /data/ex2/w205_Exercise2_TimDavid/scripts/wordcount.py /data/ex2/exercise_2/E
 cp /data/ex2/w205_Exercise2_TimDavid/scripts/tweets.py /data/ex2/exercise_2/EX2tweetwordcount/src/spouts/tweets.py
 
 # Make sure postgres is running
-#/data/stop_postgres.sh
 /data/start_postgres.sh
 
-# Log in to Postgres as user postgres
+# Create database (tcount) as user postgres, and create table(Tweetwordcount)
 createdb tcount -U postgres
 python /data/ex2/w205_Exercise2_TimDavid/scripts/create_table_tcount.py
-#psql -U postgres
-#CREATE DATABASE tcount;
-#\c tcount
-#CREATE TABLE Tweetwordcount (word TEXT PRIMARY KEY  NOT NULL, count INT NOT NULL);
-#\q
 
 # Run streamparse to populate postgres table
 cd /data/ex2/exercise_2/EX2tweetwordcount

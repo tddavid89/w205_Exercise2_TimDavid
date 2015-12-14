@@ -83,17 +83,20 @@ The following is the architecture of the program:
    |---twitterApplicationCodes
         |---finalresults.py
         |---histogram.py
-   |---architexture.md
+   |---architexture.html
+   |---architecture.md
    |---architecture.pdf
    |---automation.sh
    |---Plot.png
+   |---Readme.html
    |---Readme.md
+   |---Readme.pdf
    |---Readme.txt
 ```
 
 ### Twitter Application Codes
 **_finalresults.py_** :
-- If user gives more than one argument ( _i.e. 'hello'_ ), connect to postgres and select the count column from the row where word is equal to the arument provided
+- If user gives more than one argument ( _i.e. 'hello'_ ), connect to pmostgres and select the count column from the row where word is equal to the argument provided
 - If user does not provide an argument, connect to postgres and query all rows, in alphabetical order, printing each on its own line
 
 **_histogram.py_** :
