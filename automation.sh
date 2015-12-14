@@ -52,7 +52,7 @@ rm /data/ex2/exercise_2/EX2tweetwordcount/topologies/wordcount.clj
 cd /data/ex2
 git clone https://github.com/tddavid89/w205_Exercise2_TimDavid
 cp /data/ex2/w205_Exercise2_TimDavid/scripts/wordcount.py /data/ex2/exercise_2/EX2tweetwordcount/src/bolts/wordcount.py
-#cp /data/ex2/w205_Exercise2_TimDavid/scripts/wordcount.py /data/ex2/exercise_2/EX2tweetwordcount/src/spouts/tweets.py
+cp /data/ex2/w205_Exercise2_TimDavid/scripts/tweets.py /data/ex2/exercise_2/EX2tweetwordcount/src/spouts/tweets.py
 
 # Make sure postgres is running
 /data/stop_postgres.sh
@@ -60,7 +60,7 @@ cp /data/ex2/w205_Exercise2_TimDavid/scripts/wordcount.py /data/ex2/exercise_2/E
 
 # Log in to Postgres as user postgres
 createdb tcount -U postgres
-python /data/ex2/w205_Exercise2_TimDavid/scripts/create_table_tcount.py 
+python /data/ex2/w205_Exercise2_TimDavid/scripts/create_table_tcount.py
 #psql -U postgres
 #CREATE DATABASE tcount;
 #\c tcount
