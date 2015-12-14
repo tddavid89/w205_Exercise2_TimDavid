@@ -4,7 +4,7 @@ Complete documentation of your twitter application including directory and file 
 
 FILE STRUCTURE:
 .
-| exercise_2
+|-exercise_2
    |---EX2tweetwordcount
         |---_build
         |---config.json
@@ -26,16 +26,40 @@ FILE STRUCTURE:
              |---tweetwordcount.clj
         |---virtualenvs
              |---wordcount.txt
-  |---Exercise-2-Subject-205-Real Time Data Processing Using Apache Storm.pdf
-  |---finalresults_limit20.py
-  |---finalresults.py
-  |---hello-stream-twitter.py
-  |---histogram.py
-  |---psycopg-sample.py
-  |---README.md
-  |---tweetwordcount
-  |---Twittercredentials.py
-  |---Twittercredentials.pyc
-  |---wordcount
+   |---Exercise-2-Subject-205-Real Time Data Processing Using Apache Storm.pdf
+   |---finalresults_limit20.py
+   |---finalresults.py
+   |---hello-stream-twitter.py
+   |---histogram.py
+   |---psycopg-sample.py
+   |---README.md
+   |---tweetwordcount
+   |---Twittercredentials.py
+   |---Twittercredentials.pyc
+   |---wordcount
+
+|-w205_Exercise2_TimDavid
+   |---screenshots
+        |---01_sparse_quickstart_EX2tweetwordcount.png
+        |---02_sparse_run_t_300.png
+        |---03_streamparse_mid_run.png
+        |---04_finalresults_python_script_input_hello.png
+        |---05_finalresults_python_script_part_1.png
+        |---06_histogram_python_script.png
+        |---AMI_selection_2.png
+        |---AMI_selection.png
+        |---architecture_diagram.png
+   |---scripts
+        |---wordcount.py
+        |---tweets.py
+   |---twitterApplicationCodes
+        |---finalresults.py
+        |---histogram.py
+   |---architecture.md
+   |---architecture.txt
+   |---automation.sh
+   |---Plot.png
+   |---Readme.md
+   |---Readme.txt
 
 *automation.sh should step through all the necessary steps to run the program
