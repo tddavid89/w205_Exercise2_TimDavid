@@ -55,7 +55,7 @@ cp /data/ex2/w205_Exercise2_TimDavid/scripts/wordcount.py /data/ex2/exercise_2/E
 cp /data/ex2/w205_Exercise2_TimDavid/scripts/tweets.py /data/ex2/exercise_2/EX2tweetwordcount/src/spouts/tweets.py
 
 # Make sure postgres is running
-/data/stop_postgres.sh
+#/data/stop_postgres.sh
 /data/start_postgres.sh
 
 # Log in to Postgres as user postgres
