@@ -59,11 +59,13 @@ cp /data/ex2/w205_Exercise2_TimDavid/scripts/wordcount.py /data/ex2/exercise_2/E
 /data/start_postgres.sh
 
 # Log in to Postgres as user postgres
-psql -U postgres
-CREATE DATABASE tcount;
-\c tcount
-CREATE TABLE Tweetwordcount (word TEXT PRIMARY KEY  NOT NULL, count INT NOT NULL);
-\q
+createdb tcount -U postgres
+python /data/ex2/w205_Exercise2_TimDavid/scripts/create_table_tcount.py 
+#psql -U postgres
+#CREATE DATABASE tcount;
+#\c tcount
+#CREATE TABLE Tweetwordcount (word TEXT PRIMARY KEY  NOT NULL, count INT NOT NULL);
+#\q
 
 # Run streamparse to populate postgres table
 cd /data/ex2/exercise_2/EX2tweetwordcount

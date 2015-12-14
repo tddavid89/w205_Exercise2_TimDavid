@@ -8,9 +8,9 @@ An alternative is to run the following shell script after you have selected your
 ### AMI
 Please use one of the following AMI's in order to execute the code:
 - **[ucbw205_complete_plus_postgres_PY2.7]**
-- ![Image](/Users/tdavid/Documents/GitHub/w205_Exercise2_TimDavid/screenshots/AMI_selection.png)
+- ![Image](https://github.com/tddavid89/w205_Exercise2_TimDavid/blob/master/screenshots/AMI_selection.png?raw=true)
 - **w205_exercise2_timdavid**
-- ![Image](/Users/tdavid/Documents/GitHub/w205_Exercise2_TimDavid/screenshots/AMI_selection_2.png)
+- ![Image](https://github.com/tddavid89/w205_Exercise2_TimDavid/blob/master/screenshots/AMI_selection_2.png?raw=true)
 
 ### User
 All code was run as **_root_**
@@ -148,13 +148,14 @@ FILE STRUCTURE:
         |---AMI_selection.png
         |---architecture_diagram.png
    |---scripts
+        |---create_table_tcount.py
         |---wordcount.py
         |---tweets.py
    |---twitterApplicationCodes
         |---finalresults.py
         |---histogram.py
    |---architecture.md
-   |---architecture.txt
+   |---architecture.pdf
    |---automation.sh
    |---Plot.png
    |---Readme.md
@@ -217,25 +218,7 @@ $ python /data/ex2/w205_Exercise2_TimDavid/twitterApplicationCodes/histogram.py 
 ### Histogram
 Here are the results of the top 20 most frequently tweeted words in  the time that I ran streamparse: ![Image](https://github.com/tddavid89/w205_Exercise2_TimDavid/blob/master/Plot.png?raw=true)
 
-[//]: # "These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax"
-[dill]: https://github.com/joemccann/dillinger
-[git-repo-url]: https://github.com/joemccann/dillinger.git
-[john gruber]: http://daringfireball.net
-[@thomasfuchs]: http://twitter.com/thomasfuchs
-[df1]: http://daringfireball.net/projects/markdown/
-[marked]: https://github.com/chjj/marked
-[ace editor]: http://ace.ajax.org
-[node.js]: http://nodejs.org
-[twitter bootstrap]: http://twitter.github.com/bootstrap/
-[keymaster.js]: https://github.com/madrobby/keymaster
-[jquery]: http://jquery.com
-[@tjholowaychuk]: http://twitter.com/tjholowaychuk
-[express]: http://expressjs.com
-[angularjs]: http://angularjs.org
-[gulp]: http://gulpjs.com
+[//]: #
 [ucbw205_complete_plus_postgres_py2.7]: http://thecloudmarket.com/owner/202821560654
 [w205 github repository]: https://github.com/UC-Berkeley-I-School/w205-labs-exercises
 [automation script]: https://github.com/tddavid89/w205_Exercise2_TimDavid/blob/master/automation.sh
-[plgh]: https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md
-[plgd]: https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md
-[plod]: https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md

@@ -2,7 +2,7 @@
 The following is the architecture of the program:
 
 ## Diagram
-![Test](/Users/tdavid/Documents/GitHub/w205_Exercise2_TimDavid/screenshots/architecture_diagram.png)
+![Test](https://github.com/tddavid89/w205_Exercise2_TimDavid/blob/master/screenshots/architecture_diagram.png?raw=true)
 
 ## Description
 ### Topologies
@@ -77,13 +77,14 @@ The following is the architecture of the program:
         |---AMI_selection.png
         |---architecture_diagram.png
    |---scripts
+        |---create_table_tcount.py
         |---wordcount.py
         |---tweets.py
    |---twitterApplicationCodes
         |---finalresults.py
         |---histogram.py
    |---architexture.md
-   |---architecture.txt
+   |---architecture.pdf
    |---automation.sh
    |---Plot.png
    |---Readme.md
@@ -91,11 +92,11 @@ The following is the architecture of the program:
 ```
 
 ### Twitter Application Codes
-**_finalresults.py_**
+**_finalresults.py_** :
 - If user gives more than one argument ( _i.e. 'hello'_ ), connect to postgres and select the count column from the row where word is equal to the arument provided
 - If user does not provide an argument, connect to postgres and query all rows, in alphabetical order, printing each on its own line
 
-**_histogram.py_**
+**_histogram.py_** :
 - If user gives exactly two arguments, separated by two numbers, check to make sure that the first number is less than or equal to the second number
 - If first condition is satisfied, then connect to postgres and supply the counts of each number in the range supplied
   - In order to make this work, I needed to only keep words that consisted of all numbers ( _where word ~ '^[0-9]*$'_ ), and cast those words as integers ( _word::bigint_ ). This resulted in multiple rows of each number, so I took the aggregate sum of each number
